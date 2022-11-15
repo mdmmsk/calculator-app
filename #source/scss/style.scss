@@ -1,0 +1,180 @@
+@import "_nullstyle";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+body {
+	font-family: "Work Sans", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.calculator {
+	height: 582px;
+	width: 364px;
+	background: #000;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	&__display{
+		display: flex;
+		justify-content: end;
+	}
+	&__number {
+		display: inline-block;
+		font-size: 96px;
+		line-height: 96px;
+		color: #ffffff;
+	}
+}
+
+.container {
+	max-width: 324px;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 16px;
+}
+.row a:hover {
+	background: #4b5efc;
+}
+
+.btn {
+	display: block;
+	width: 70px;
+	height: 70px;
+	background: #2e2f38;
+	border-radius: 24px;
+	margin-left: 15px;
+	span {
+		display: block;
+		text-align: center;
+		font-size: 32px;
+		line-height: 45px;
+		color: white;
+		margin: 12px 0;
+	}
+	&__clear {
+		width: 153.33px;
+		background: #4e505f;
+	}
+
+	&__back {
+		span {
+			width: 70px;
+			height: 70px;
+			background: url("../img/Union.png") 50% 50% no-repeat;
+			margin: 0;
+		}
+	}
+
+	&__operator {
+		background: #4b5efc;
+		span {
+			margin: 0;
+		}
+		span {
+			display: inline-block;
+			position: relative;
+			top: 30px;
+			left: 27px;
+			width: 16px;
+			height: 2px;
+			background: white;
+		}
+		span:before {
+			content: "";
+			display: inline-block;
+			top: -25px;
+			width: 16px;
+			height: 2px;
+			background: white;
+			position: relative;
+		}
+	}
+	&__equal{
+		background: #4b5efc;
+		span {
+			margin: 0;
+		}
+		span {
+			display: inline-block;
+			position: relative;
+			top: 30px;
+			left: 27px;
+			width: 16px;
+			height: 2px;
+			background: white;
+		}
+		span:before {
+			content: "";
+			display: inline-block;
+			top: -25px;
+			width: 16px;
+			height: 2px;
+			background: white;
+			position: relative;
+		}
+	}
+	&__divide {
+		span {
+			top: 32px;
+		}
+		span:before {
+			content: "";
+			display: inline-block;
+			top: -23px;
+			left: 2px;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+		}
+		span:after {
+			content: "";
+			display: inline-block;
+			top: -36px;
+			left: -2px;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background: white;
+			position: relative;
+		}
+	}
+
+	&__multiply {
+		span {
+			top: 35px;
+			transform: rotate(45deg);
+		}
+		span::before {
+			top: -30px;
+			transform: rotate(-90deg);
+		}
+	}
+
+	&__minus {
+		span {
+			top: 25px;
+		}
+		span::before {
+			display: none;
+		}
+	}
+
+	&__plus {
+		span {
+			top: 35px;
+		}
+		span::before {
+			transform: rotate(90deg);
+			top: -30px;
+		}
+	}
+
+	&__zero {
+		width: 324px - 66;
+	}
+}

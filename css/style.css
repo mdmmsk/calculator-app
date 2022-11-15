@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculator {
+  height: 582px;
+  width: 364px;
+  background: #000;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.calculator__display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.calculator__number {
+  display: inline-block;
+  font-size: 96px;
+  line-height: 96px;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 324px;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 16px;
+}
+
+.row a:hover {
+  background: #4b5efc;
+}
+
+.btn {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: #2e2f38;
+  border-radius: 24px;
+  margin-left: 15px;
+}
+
+.btn span {
+  display: block;
+  text-align: center;
+  font-size: 32px;
+  line-height: 45px;
+  color: white;
+  margin: 12px 0;
+}
+
+.btn__clear {
+  width: 153.33px;
+  background: #4e505f;
+}
+
+.btn__back span {
+  width: 70px;
+  height: 70px;
+  background: url("../img/Union.png") 50% 50% no-repeat;
+  margin: 0;
+}
+
+.btn__operator {
+  background: #4b5efc;
+}
+
+.btn__operator span {
+  margin: 0;
+}
+
+.btn__operator span {
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  left: 27px;
+  width: 16px;
+  height: 2px;
+  background: white;
+}
+
+.btn__operator span:before {
+  content: "";
+  display: inline-block;
+  top: -25px;
+  width: 16px;
+  height: 2px;
+  background: white;
+  position: relative;
+}
+
+.btn__equal {
+  background: #4b5efc;
+}
+
+.btn__equal span {
+  margin: 0;
+}
+
+.btn__equal span {
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  left: 27px;
+  width: 16px;
+  height: 2px;
+  background: white;
+}
+
+.btn__equal span:before {
+  content: "";
+  display: inline-block;
+  top: -25px;
+  width: 16px;
+  height: 2px;
+  background: white;
+  position: relative;
+}
+
+.btn__divide span {
+  top: 32px;
+}
+
+.btn__divide span:before {
+  content: "";
+  display: inline-block;
+  top: -23px;
+  left: 2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.btn__divide span:after {
+  content: "";
+  display: inline-block;
+  top: -36px;
+  left: -2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+  position: relative;
+}
+
+.btn__multiply span {
+  top: 35px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.btn__multiply span::before {
+  top: -30px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.btn__minus span {
+  top: 25px;
+}
+
+.btn__minus span::before {
+  display: none;
+}
+
+.btn__plus span {
+  top: 35px;
+}
+
+.btn__plus span::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: -30px;
+}
+
+.btn__zero {
+  width: 258px;
+}
